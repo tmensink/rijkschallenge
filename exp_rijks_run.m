@@ -4,9 +4,8 @@
 % copyright, 2014-2017
 % Thomas Mensink, University of Amsterdam
 % thomas.mensink@uva.nl
-clc;
 clearvars -except data expOpts
-n = 'Rijksmuseum Challenge Run Experiment';
+n = 'RMC Run Experiment';
 v = 1.1;
 fprintf('%30s | %7.4f | %s\n',n,v,datestr(now,31));
 
