@@ -1,4 +1,4 @@
-function [topk] = eval_top(G,P,k)
+function [topk] = eval_mca(G,P,k)
     % predict performance at top 1 ... k
     % input
     %   G = N x 1
