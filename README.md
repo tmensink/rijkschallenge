@@ -7,10 +7,13 @@ Per challenge there is a file (ie exp_rijks_creator for the Creator Challenge)
   - it loads/trains SVM models
   - it evaluate the SVM models (and select the best one on the validation set)
 
-Make sure to clear all variables (mainly the data struct) before evaluating another challenge.(Because ground-truth is loaded differently for each challenge)
+Make sure to clear all variables (mainly the data struct) before evaluating another challenge. (Because ground-truth is loaded differently for each challenge)
 
 ## Paper
-When using this code, or this challenge, please cite the following paper
+
+![t-SNE plot of RMC14](https://github.com/tmensink/rijkschallenge/img/dataviz.jpg)
+
+When using this code, or this challenge, please cite the following paper ([pdf](https://ivi.fnwi.uva.nl/isis/publications/2014/MensinkICMIR2014/MensinkICMIR2014.pdf))
 
     @INPROCEEDINGS{mensink14icmr,
       author = {Thomas Mensink and Jan van Gemert},
@@ -18,6 +21,11 @@ When using this code, or this challenge, please cite the following paper
       booktitle = {ACM International Conference on Multimedia Retrieval (ICMR)},
       year = {2014}
       }
+
+## Data
+The data (Fisher Vector files, ground-truth, images, and xml files) is available from:
+
+**todo add link**
 
 ## Copyright (2014-2017)
 Thomas Mensink, University of Amsterdam
