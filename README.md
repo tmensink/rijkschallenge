@@ -9,6 +9,9 @@ Per challenge there is a file (ie exp_rijks_creator for the Creator Challenge)
 
 Make sure to clear all variables (mainly the data struct) before evaluating another challenge. (Because ground-truth is loaded differently for each challenge)
 
+**Dependency**: The provided Matlab code, make use of the LIBLINEAR package ( [web](https://www.csie.ntu.edu.tw/~cjlin/liblinear/),
+[github](https://github.com/cjlin1/liblinear)). Make sure to compile the Matlab interface, and that LIBLINEARs `train` function is in the Matlab path
+
 ## Paper
 
 ![t-SNE plot of RMC14](https://github.com/tmensink/rijkschallenge/blob/dev/img/dataviz.jpg)

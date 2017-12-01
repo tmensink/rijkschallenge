@@ -30,3 +30,19 @@ expOpts.svm.algo        = 11;                   % Option of LibLinear Train, see
 expOpts.eval.func       = 'sqloss';             % Set evaluation measure (SQ Loss)
 
 exp_rijks_run                                   % Run experiment
+
+
+%%% 
+% This will run the experiment, the final few lines should be (similar to):
+% Cross Validate using sqloss
+%         C 1e-02 P -150.565 (sqloss)
+%         C 1e-01 P -149.782 (sqloss)
+%         C 1e+00 P -149.851 (sqloss)
+%         C 1e+01 P -149.859 (sqloss)
+%         C 1e+02 P -149.860 (sqloss)
+% Evaluate using C 1e-01 |
+% year
+%            0 | TRN | ii    1 ( all )| sqLoss  160.13 absLoss   73.11 iCor (50 yrs)   49.75
+%            0 | VAL | ii    1 ( all )| sqLoss  149.78 absLoss   71.53 iCor (50 yrs)   49.77
+%            0 | TST | ii    1 ( all )| sqLoss  163.00 absLoss   74.39 iCor (50 yrs)   48.98
+%            0 | TST | ii    1 (mean )| sqLoss  173.81 absLoss   89.19 iCor (50 yrs)   36.84

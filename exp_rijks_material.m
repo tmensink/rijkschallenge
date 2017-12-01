@@ -30,3 +30,21 @@ expOpts.svm.algo        = 1;                    % Option of LibLinear Train
 expOpts.eval.func       = 'map';                % Set evaluation measure (MAP)
 
 exp_rijks_run                                   % Run experiment
+
+
+%%% 
+% This will run the experiment, the final few lines should be (similar to):
+% Cross Validate using map
+%         C 1e-02 P    1.000 (map)
+%         C 1e-01 P    1.000 (map)
+%         C 1e+00 P    1.000 (map)
+%         C 1e+01 P    1.000 (map)
+%         C 1e+02 P    1.000 (map)
+% Evaluate using C 1e-02 |
+% material   
+%            0 | TRN | ii   81 ( all )| mAP:   49.24 imAP   92.06
+%            0 | VAL | ii   81 ( all )| mAP:   38.28 imAP   91.66
+%            0 | TST | ii   81 ( all )| mAP:   38.30 imAP   92.06
+%            1 | TST | ii   75 ( 98.5)| mAP:   40.04 imAP   93.47
+%            2 | TST | ii   50 ( 98.0)| mAP:   42.18 imAP   94.00
+%            3 | TST | ii   25 ( 96.1)| mAP:   51.36 imAP   95.74
