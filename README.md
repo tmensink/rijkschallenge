@@ -11,7 +11,7 @@ Make sure to clear all variables (mainly the data struct) before evaluating anot
 
 ## Paper
 
-![t-SNE plot of RMC14](https://github.com/tmensink/rijkschallenge/img/dataviz.jpg)
+![t-SNE plot of RMC14](https://github.com/tmensink/rijkschallenge/blob/dev/img/dataviz.jpg)
 
 When using this code, or this challenge, please cite the following paper ([pdf](https://ivi.fnwi.uva.nl/isis/publications/2014/MensinkICMIR2014/MensinkICMIR2014.pdf))
 
