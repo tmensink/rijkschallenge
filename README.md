@@ -1,5 +1,4 @@
 # Rijksmuseum Challenge 2014
-
 This software package provides baseline scores for the 4 different computer vision challenges introduced in our ICMR paper: **The Rijksmuseum Challenge: Museum-Centered Visual Recognition**
 
 In our paper, we have introduced 4 challenges:
@@ -9,9 +8,10 @@ In our paper, we have introduced 4 challenges:
   - Year: predict the year of creation (1960, 1684)
 See the paper for more details and considerations about the used data.
 
+![t-SNE plot of RMC14](https://github.com/tmensink/rijkschallenge/blob/dev/img/dataviz.jpg)
 
-##Baseline code and Evaluation
 
+## Baseline code and Evaluation
 These provide Matlab codes are intended to showcase the baselines on the Rijksmuseum Challenge 2014 as published in the paper. 
 
 Per challenge there is a file (ie `exp_rijks_creator.m` for the Creator Challenge), which
@@ -31,9 +31,6 @@ The data (Fisher Vector files, ground-truth, images, and xml files) is available
 **todo add link**
 
 ## Paper
-
-![t-SNE plot of RMC14](https://github.com/tmensink/rijkschallenge/blob/dev/img/dataviz.jpg)
-
 When using this code, or this challenge, please cite the following paper ([pdf](https://ivi.fnwi.uva.nl/isis/publications/2014/MensinkICMIR2014/MensinkICMIR2014.pdf))
 
     @INPROCEEDINGS{mensink14icmr,
