@@ -1,13 +1,12 @@
 BSD 2-Clause License
 
 Copyright (c) 2017, Thomas Mensink, University of Amsterdam
+Software and dataset are used in: 
+T. Mensink & J. van Gemert, The Rijksmuseum Challenge: Museum-Centered Visual Recognition, International Conference on Multimedia Retrieval, 2014
+When using this code or the dataset, please cite this paper
 All rights reserved.
 
-When using this code or this dataset, please cite the scientific paper:
-T. Mensink & J. van Gemert
-The Rijksmuseum Challenge: Museum-Centered Visual Recognition
-International Conference on Multimedia Retrieval
-2014
+
  
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
