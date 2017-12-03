@@ -10,11 +10,10 @@ function [iap, ap, det] = eval_map(GT, Pred)
     %   ap 		scalar		non-interpolated MAP
     %   det    	struct 		with more detailed scores
     %
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % copyright, 2014
-    % Thomas Mensink, University of Amsterdam
-    % thomas.mensink@uva.nl    
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Part of RMC14 - initial release
+	% copyright, 2014-2017
+	% Thomas Mensink, University of Amsterdam
+	% thomas.mensink@uva.nl
     
     NrN = size(Pred,1);
     NrQ = size(Pred,2);

@@ -1,4 +1,11 @@
 function data = rijks_load(expOpts)
+	% Load the data for a specific challenge (defined in expOpts)
+	%
+    % Part of RMC14 - initial release
+    % copyright, 2014-2017
+    % Thomas Mensink, University of Amsterdam
+    % thomas.mensink@uva.nl
+
     v = 1.0;
     fprintf('%30s | %7.4f | %s\n',mfilename,v,datestr(now,31));
     Fdata       = load(expOpts.data.file);    

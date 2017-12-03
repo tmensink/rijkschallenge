@@ -3,10 +3,10 @@ function R = rijks_svm(expOpts,data)
     %
     % This file depends on the Liblinear TRAIN function
     %
-    % copyright, 2014
+    % Part of RMC14 - initial release
+    % copyright, 2014-2017
     % Thomas Mensink, University of Amsterdam
     % thomas.mensink@uva.nl
-    %
     v = 1.0;
     fprintf('%30s | %7.4f | %s\n',mfilename,v,datestr(now,31));
     

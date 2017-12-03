@@ -1,5 +1,5 @@
 function [topk] = eval_top(G,P,k)
-    % predict performance at top 1 ... k
+    % Evaluate top 1 ... k prediction
     % input
     %   G = N x 1
     %   P = N x Classes
@@ -8,9 +8,13 @@ function [topk] = eval_top(G,P,k)
     % Output
     %   topk    vector  1 x k top k performance averaged per image
     %
-	% copyright, 2014
-    % Thomas Mensink, University of Amsterdam
-    % thomas.mensink@uva.nl    
+    % Top-1 performance is similar to per image accuracy
+    % Top-5 performance has been extensively used by the ILSVRC challenge
+    %
+	% Part of RMC14 - initial release
+	% copyright, 2014-2017
+	% Thomas Mensink, University of Amsterdam
+	% thomas.mensink@uva.nl
        
     if nargin < 3 || isempty(k), k = 5;end
     

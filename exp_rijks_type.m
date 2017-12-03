@@ -1,6 +1,7 @@
 %% Rijksmuseum Type Challenge
 % script to run and evaluate the baseline for the Rijksmuseum Challenge
 %
+% Part of RMC14 - initial release
 % copyright, 2014-2017
 % Thomas Mensink, University of Amsterdam
 % thomas.mensink@uva.nl

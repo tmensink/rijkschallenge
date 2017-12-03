@@ -9,7 +9,8 @@ function res = rijks_eval(expOpts,data,R)
     % Ouput
     %   ret  vector  returns just validation performance
     %
-    % copyright, 2014
+    % Part of RMC14 - initial release
+    % copyright, 2014-2017
     % Thomas Mensink, University of Amsterdam
     % thomas.mensink@uva.nl
     v = 1.0;

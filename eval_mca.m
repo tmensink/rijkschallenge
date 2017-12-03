@@ -1,5 +1,6 @@
-function [topk] = eval_mca(G,P,k)
-    % predict performance at top 1 ... k
+function [mca] = eval_mca(G,P,k)
+    % Compute Mean Class Accuracy (using top-k predictions)
+    %
     % input
     %   G = N x 1
     %   P = N x Classes
@@ -8,9 +9,10 @@ function [topk] = eval_mca(G,P,k)
     % Output
     %   topk    vector  1 x k top k performance averaged per image
     %
-	% copyright, 2014
-    % Thomas Mensink, University of Amsterdam
-    % thomas.mensink@uva.nl    
+	% Part of RMC14 - initial release
+	% copyright, 2014-2017
+	% Thomas Mensink, University of Amsterdam
+	% thomas.mensink@uva.nl
        
     if nargin < 3 || isempty(k), k = 5;end
     NrC = size(P,2);
@@ -21,5 +23,5 @@ function [topk] = eval_mca(G,P,k)
     [val,inx] = sort(P,2,'descend');
     C = cumsum( bsxfun(@eq,inx(:,1:k),G),2);
     M = bsxfun(@times,C,N(G));
-    topk = sum(M,1)./NrC;
+    mca = sum(M,1)./NrC;
 end

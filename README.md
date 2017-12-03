@@ -29,7 +29,7 @@ Make sure to compile the Matlab interface, and to add to the Matlab-path, the co
 The data (Fisher Vector files, ground-truth, images, and xml files) is available from: [figshare](https://figshare.com/articles/Rijksmuseum_Challenge_2014/5660617) ([doi](https://doi.org/10.21942/uva.5660617))
 
 ## Paper
-When using this code, or this challenge, please cite the following paper ([pdf](https://ivi.fnwi.uva.nl/isis/publications/2014/MensinkICMIR2014/MensinkICMIR2014.pdf))
+When using this code, or this challenge, please cite the following paper ([pdf](https://staff.fnwi.uva.nl/t.e.j.mensink/publications/mensink14icmr.pdf))
 
     @INPROCEEDINGS{mensink14icmr,
       author = {Thomas Mensink and Jan van Gemert},
