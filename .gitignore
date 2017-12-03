@@ -1,0 +1,3 @@
+# Ignore data and result directory from git
+results
+data
