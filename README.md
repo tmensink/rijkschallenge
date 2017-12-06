@@ -8,7 +8,7 @@ In our paper, we have introduced 4 challenges:
   - Year: predict the year of creation (1960, 1684)
 See the paper for more details and considerations about the used data.
 
-![t-SNE plot of RMC14](https://github.com/tmensink/rijkschallenge/blob/dev/img/dataviz.jpg)
+![t-SNE plot of RMC14](https://github.com/tmensink/rijkschallenge/blob/master/img/dataviz.jpg)
 
 
 ## Baseline code and Evaluation
