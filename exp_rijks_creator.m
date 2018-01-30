@@ -14,10 +14,13 @@ fprintf('%30s | %7.4f | %s\n',n,v,datestr(now,31));
 expOpts                 = struct();
 expOpts.name            = 'creator';
 
-[bdir,rdir]             = exp_rijks_datadir();  % Get directory of results and data
-expOpts.rdir            = rdir;                
-expOpts.data.file       = [bdir, 'rijksFV16.mat'];
+[bdir,rdir]             = exp_rijks_datadir();  % Get directory of results and data             
+% ./data/rijks/results/dsift/I_100k_5s4s6b1uroot/llf_000250n/pca_D0096_LNS/gmm_splitem_K0016/gmm_fv_CFA_mv/pool_img_F_050_10
+% expOpts.data.file       = [bdir, 'rijksFV16.mat'];
+expOpts.data.file       = '../fvkit/data/rijks/results/dsift/I_100k_5s4s6b1uroot/llf_000250n/pca_D0096_LNS/gmm_splitem_K0016/gmm_fv_CFA_mv/pool_img_F_050_10/';
 expOpts.data.gtfile     = [bdir, 'rijksgt.mat'];
+expOpts.rdir            = [expOpts.data.file '/results/'];
+%expOpts.rdir            = rdir;   
 clearvars bdir rdir
 
 expOpts.data.gtfield    = 'C';                  % Get creator field from GT
