@@ -55,6 +55,10 @@ When using this code, or this challenge, please cite the following paper ([pdf](
       year = {2014}
       }
 
+## Version history
+* V1.0, Nov 2017: Moved to Github (initial release)
+* V1.1, Jan 2018: Updated readme and make compatible with  [FVKit](https://github.com/tmensink/fvkit) extraction.
+
 ## Copyright (2014-2018)
 Thomas Mensink, University of Amsterdam
 thomas.mensink@uva.nl
