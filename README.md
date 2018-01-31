@@ -20,10 +20,24 @@ Per challenge there is a file (ie `exp_rijks_creator.m` for the Creator Challeng
   - cross-validate the SVM hyperparameter
   - evaluate the model using the challenge specific measure (MCA, mAP, Sq-Loss)
 
-Make sure to clear all variables (mainly the data struct) before evaluating another challenge. (Because ground-truth is loaded differently for each challenge)
+The expected results are included in each of the challenge scripts. For example for the Creator Challenge:
 
-**Code Dependency**: The provided Matlab code, makes use of the LIBLINEAR package ([web](https://www.csie.ntu.edu.tw/~cjlin/liblinear/),[github](https://github.com/cjlin1/liblinear)).
-Make sure to compile the Matlab interface, and to add to the Matlab-path, the code requires LIBLINEARs `train` function.
+Setting | Set | Num Classes (%) | MCA Top 1| Top 2 | Top 3 | Top 4 | Top 5|
+--------|
+0 | VAL | 375 ( all )| 50.27 |  67.85  | 73.16 |  76.62 | 78.87
+0 | TST | 375 ( all )| 51.02 |  68.42  | 73.98 |  77.60 | 79.97
+1 | TST | 374 ( 59.1)| 65.53 |  73.33  | 77.26 |  79.78 | 81.33
+2 | TST | 300 ( 55.5)| 67.63 |  75.38  | 78.84 |  81.14 | 82.63
+3 | TST | 250 ( 52.5)| 69.45 |  77.04  | 80.68 |  82.92 | 84.31
+4 | TST | 200 ( 48.7)| 71.17 |  79.15  | 82.77 |  84.88 | 86.22
+5 | TST | 150 ( 43.6)| 72.58 |  80.90  | 84.57 |  86.76 | 88.21
+6 | TST | 100 ( 36.8)| 75.73 |  83.42  | 87.32 |  89.14 | 90.45
+7 | TST |  50 ( 26.4)| 78.18 |  86.45  | 90.00 |  91.95 | 93.22
+8 | TST |  25 ( 18.7)| 81.81 |  89.59  | 92.79 |  94.69 | 96.01
+
+## Code Dependency
+The provided Matlab code, makes use of the LIBLINEAR package ([web](https://www.csie.ntu.edu.tw/~cjlin/liblinear/),[github](https://github.com/cjlin1/liblinear)).
+For convenience the required `train` function is added to the `lib` directory (for Mac and Linux only). Ensure to add it to the Matlab path
 
 ## Data
 The data (Fisher Vector files, ground-truth, images, and xml files) is available from: [figshare](https://figshare.com/articles/Rijksmuseum_Challenge_2014/5660617) ([doi](https://doi.org/10.21942/uva.5660617))

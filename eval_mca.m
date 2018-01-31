@@ -10,7 +10,7 @@ function [mca] = eval_mca(G,P,k)
     %   topk    vector  1 x k top k performance averaged per image
     %
 	% Part of RMC14 - initial release
-	% copyright, 2014-2017
+	% copyright, 2014-2018
 	% Thomas Mensink, University of Amsterdam
 	% thomas.mensink@uva.nl
        
@@ -20,7 +20,7 @@ function [mca] = eval_mca(G,P,k)
     N(N==0) = 1;
     N = 1./N;
     
-    [val,inx] = sort(P,2,'descend');
+    [~,inx] = sort(P,2,'descend');
     C = cumsum( bsxfun(@eq,inx(:,1:k),G),2);
     M = bsxfun(@times,C,N(G));
     mca = sum(M,1)./NrC;

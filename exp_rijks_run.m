@@ -5,9 +5,9 @@
 % copyright, 2014-2018
 % Thomas Mensink, University of Amsterdam
 % thomas.mensink@uva.nl
-clearvars -except data expOpts
+clearvars -except data expOpts fvEnc
 n = 'RMC Run Experiment';
-v = 1.2;
+v = 1.3;
 fprintf('%30s | %7.4f | %s\n',n,v,datestr(now,31));
 
 %History

@@ -12,13 +12,13 @@ function [topk] = eval_top(G,P,k)
     % Top-5 performance has been extensively used by the ILSVRC challenge
     %
 	% Part of RMC14 - initial release
-	% copyright, 2014-2017
+	% copyright, 2014-2018
 	% Thomas Mensink, University of Amsterdam
 	% thomas.mensink@uva.nl
        
     if nargin < 3 || isempty(k), k = 5;end
     
-    [val,inx] = sort(P,2,'descend');
+    [~,inx] = sort(P,2,'descend');
     C = cumsum( bsxfun(@eq,inx(:,1:k),G),2);
     topk = mean(C,1);
 end
