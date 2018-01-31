@@ -6,13 +6,15 @@ function data = rijks_load(expOpts)
     % Thomas Mensink, University of Amsterdam
     % thomas.mensink@uva.nl
     
-    v = 1.01;
+    v = 1.1;
     fprintf('%30s | %7.4f | %s\n',mfilename,v,datestr(now,31));
     
     %History
     % v 1.1: Either load data from mat file (Figshare) or from FVKit directory
     Fgt         = load(expOpts.data.gtfile);    
-    if exist(expOpts.data.file,'dir') == 7,
+
+    if exist(expOpts.data.file,'dir') == 7, 
+        %If directory, assume it comes from FVKit encoding
         T = {'TRAIN','VAL','TEST'};
         for t =1:numel(T),
             q = load([expOpts.data.file '/feat_' T{t} '.mat']);            
@@ -22,6 +24,7 @@ function data = rijks_load(expOpts)
             Fdata.X(:,Fgt.gt.set==t) = q.X;
         end
     else
+        %Otherwise, assume it is a single mat (struct) file
         Fdata       = load(expOpts.data.file);
     end
     
