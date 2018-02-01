@@ -22,8 +22,8 @@ Per challenge there is a file (ie `exp_rijks_creator.m` for the Creator Challeng
 
 The expected results are included in each of the challenge scripts. For example for the Creator Challenge:
 
-Setting | Set | Num Classes (%) | MCA Top 1| Top 2 | Top 3 | Top 4 | Top 5|
---------|
+Setting | Set | Num Classes (%) | MCA Top 1| Top 2 | Top 3 | Top 4 | Top 5
+--------|-----|-----------------|----------|-------|-------|-------|------
 0 | VAL | 375 ( all )| 50.27 |  67.85  | 73.16 |  76.62 | 78.87
 0 | TST | 375 ( all )| 51.02 |  68.42  | 73.98 |  77.60 | 79.97
 1 | TST | 374 ( 59.1)| 65.53 |  73.33  | 77.26 |  79.78 | 81.33
@@ -34,6 +34,7 @@ Setting | Set | Num Classes (%) | MCA Top 1| Top 2 | Top 3 | Top 4 | Top 5|
 6 | TST | 100 ( 36.8)| 75.73 |  83.42  | 87.32 |  89.14 | 90.45
 7 | TST |  50 ( 26.4)| 78.18 |  86.45  | 90.00 |  91.95 | 93.22
 8 | TST |  25 ( 18.7)| 81.81 |  89.59  | 92.79 |  94.69 | 96.01
+
 These results correspond to the results of the intensity FV in Table 1 in [mensink14icmr].
 
 ## Code Dependency
